@@ -40,7 +40,7 @@ func threeSum<T: BidirectionalCollection>(_ collection: T, target: T.Element) ->
     var m = sorted.index(after: l)
     var r = sorted.index(before: sorted.endIndex)
     
-    TwoSum: while m < r && r < sorted.endIndex { 
+    TwoSum: while m < r {
       let sum = sorted[l] + sorted[m] + sorted[r]
       if sum == target {
         ret.append([sorted[l], sorted[m], sorted[r]])

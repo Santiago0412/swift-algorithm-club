@@ -62,3 +62,5 @@ func fourSum<T: BidirectionalCollection>(_ collection: T, target: T.Element) -> 
 
 // answer: [[-2, -1, 1, 2], [-2, 0, 0, 2], [-1, 0, 0, 1]]
 fourSum([1, 0, -1, 0, -2, 2], target: 0)
+
+//和3sum一样，这里的left和middle-left都是锚点，而right-left和right则为动态调整的对象，但是总的来说区别就是一个在外面被确定，一个在里面，外面的先确定里面的后确定，本质上却都是循环遍历
